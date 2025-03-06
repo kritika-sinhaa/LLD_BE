@@ -1,0 +1,106 @@
+.submission-page {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.editor-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.code-editor-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 500px;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+}
+
+.output-section {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.output-display {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  min-height: 200px;
+  white-space: pre-wrap;
+}
+
+.problem-solution {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button-group {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.topic-detail {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solution-section {
+  margin-top: 32px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.editor-section {
+  margin-top: 16px;
+  height: 500px;
+  width: 100%;
+}
+
+/* Adjust the editor height for this specific use case */
+.solution-section .code-editor-container {
+  height: 400px;
+  margin-bottom: 16px;
+}
+
+/* Make the output section more compact when in the problem page */
+.solution-section .output-section {
+  margin-top: 20px;
+  padding: 16px;
+}
+
+.solution-section .output-display {
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Make sure Monaco editor container is visible */
+.monaco-editor {
+  padding: 8px;
+  height: 100% !important;
+  width: 100% !important;
+} 
